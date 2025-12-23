@@ -14,12 +14,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  padding: 50px;
 }
 #container-login {
   background-color: white;
   width: 600px;
-  height: 600px;
+  height: fit-content;
   border: 1px solid #efefef;
   border-radius: 4px;
   display: flex;
@@ -40,7 +40,8 @@ main {
 #container-login form label {
   margin-bottom: 4px;
 }
-#email {
+#email,
+#name {
   box-sizing: border-box;
   padding: 10px;
   height: 48px;
@@ -48,10 +49,52 @@ main {
   border: 1px solid #f1f1f1;
   margin-bottom: 16px;
 }
-.pass-container {
+.container-nohp {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  column-gap: 14px;
+  margin-top: 4px;
+}
+.input-noHp {
+  margin-bottom: 16px;
+}
+.container-code-country {
+  width: 20%;
+  display: flex;
+}
+
+#code-country,
+#no-hp {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 48px;
+
+  border: 1px solid #f1f1f1;
+}
+.flag {
+  background-color: #f4f5fa;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #3a35411f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+#code-country {
+  width: 60%;
+  border-radius: 0 6px 6px 0;
+}
+#no-hp {
+  width: 80%;
+  border-radius: 6px;
+}
+.pass-container,
+.pass-confirm-container {
   position: relative;
 }
-#password {
+#password,
+#password-confirm {
   box-sizing: border-box;
   padding: 10px;
   width: 100%;
@@ -169,5 +212,11 @@ form {
   }
   .masuk-google {
     font-size: 14px;
+  }
+  #no-hp {
+    width: 60%;
+  }
+  .container-code-country {
+    width: 40%;
   }
 }
