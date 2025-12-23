@@ -20,6 +20,7 @@ main {
   background-color: white;
   width: 600px;
   height: 600px;
+  border: 1px solid #efefef;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -80,4 +81,89 @@ form {
 .lupa-pass a {
   color: #333333ad;
   text-decoration: none;
+}
+.masuk {
+  background-color: #3ecf4c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.daftar {
+  background-color: #e2fcd9cc;
+  color: #3ecf4c;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.atau-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.atau {
+  font-size: 16px;
+  color: #4a505c;
+}
+.atau-container span {
+  height: 3px;
+  width: 50%;
+  background-color: #f1f1f1;
+}
+.masuk-google {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.masuk-google span {
+  color: #4a505c;
+}
+
+@media (max-width: 1600px) {
+  #container-login {
+    height: fit-content;
+  }
+  main {
+    height: fit-content;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+  nav img {
+    width: 40%;
+  }
+  #container-login h1 {
+    font-size: 24px;
+  }
+  #container-login h3 {
+    font-size: 14px;
+  }
+  .masuk {
+    font-size: 14px;
+  }
+  .daftar {
+    font-size: 14px;
+  }
+  .masuk-google {
+    font-size: 14px;
+  }
 }
